@@ -70,14 +70,15 @@ section{
     gap: 24px;
 }
 .article-text-1{
-    width: calc(50% - 24px);
+    width: 50%;
+    padding: 0 24px 0 0;
 }
 .article-video-1{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height: 50%;
+    width: 480px;
+    height: 290px;
     overflow: hidden;
     border-radius: 32px;
     z-index: 1;
@@ -101,7 +102,7 @@ section{
     margin-top: 24px;
     font-size: 2.7rem;
 }
-.article-text-1 p{
+.article-text-1 p, .article-2-content-item p{
     margin-top: 24px;
     color: rgb(58, 58, 58);
     font-weight: 300;
@@ -111,6 +112,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 0 64px 0;
 }
 .article-2-division h2{
     width: 50%;
@@ -119,10 +121,78 @@ section{
 }
 .article-2-division h3{
     width: 60%;
-    margin-top: 24px;
+    margin: 24px 0;
     text-align: center;
     line-height: 24px;
     font-size: 1rem;
     font-weight: 300;
 }
-
+.article-2-content-container{
+    display: flex;
+    gap: 5%;
+}
+.article-2-content-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    position: relative;
+}
+.article-2-content-item img{
+    display: block;
+    height: 124px;
+}
+.article-2-content-item div{
+    margin: 32px 0;
+}
+.article-2-content-item div h4{
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+}
+.article-2-content-item div p{
+    color: rgb(58, 58, 58);
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+}
+.article-2-content-item div h4:hover{
+    color: #F83596;
+}
+.article-3-division{
+    display: flex;
+}
+.article-3-division img{
+    width: 40%;
+}
+.article-3-division div{
+    padding: 0 0 0 24px;
+}
+.article-3-division h2{
+    margin: 0 0 28px 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.article-3-division h3, .article-3-division p{
+    margin: 0 0 16px 0;
+    color: #3d3d3d;
+}
+.article-4-division div{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 5%;
+}
+.article-4-division .card{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 0 48px 0;
+    width: 30%;
+    height: 360px;
+    background-color: green;
+    justify-content: space-between;
+}
+.product-description{
+    list-style: none;
+}
