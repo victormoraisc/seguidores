@@ -16,6 +16,10 @@ header{
     box-sizing: border-box;
     z-index: 999;
 }
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
 .header-navbar{
     height: 17vh;
     display: flex;
@@ -119,7 +123,7 @@ section{
     text-align: center;
     line-height: 34px;
 }
-.article-2-division h3{
+.article-2-division h3, .article-4-division h3{
     width: 60%;
     margin: 24px 0;
     text-align: center;
@@ -171,28 +175,193 @@ section{
 }
 .article-3-division h2{
     margin: 0 0 28px 0;
-    font-size: 1.8rem;
-    font-weight: 600;
+
 }
 .article-3-division h3, .article-3-division p{
     margin: 0 0 16px 0;
     color: #3d3d3d;
 }
+.article-4-division{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 64px 0 0 0;
+}
 .article-4-division div{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    gap: 5%;
+    gap: 2%;
+}
+.article-4-division h2{
+    width: 60%;
+    text-align: center;
 }
 .article-4-division .card{
     flex-direction: column;
     flex-wrap: nowrap;
     margin: 0 0 48px 0;
-    width: 30%;
-    height: 360px;
-    background-color: green;
+    width: 32%;
+    height: 500px;
+    border: #ffb0d7 3px solid;
+    background-color: #fff;
     justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: rgba(138, 63, 150, 0.192) 0px 4px 8px 8px;
+    padding: 0 12px;
+    align-items: center;
+    transition: transform 0.3s;
+}
+.article-4-division .card:hover{
+    cursor: pointer;
+    transform: translateY(-15px);
+}
+.article-4-division .card h4{
+    text-align: center;
+    margin-top: 16px;
+    font-size: 1.4rem;
+    color: #7e328a;
+    font-weight: 600;
+}
+.card .value{
+   font-size: 3rem;
+    text-align: center;
+    color: #F83596;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.value .currency{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+}
+.value .time{
+    font-size: 1rem; 
+    margin-top: 10px;
+}
+.article-4-division .card h4:hover{
+    color: #F83596;
 }
 .product-description{
     list-style: none;
+}
+.qtd-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #7e328a;
+    font-weight: 500;
+}
+.qtd-container .qtd{
+    font-size: 1.7rem;
+}
+.product-description li{
+    margin-top: 16px;
+}
+.product-description i{
+    color: #F83596;
+    margin: 0 8px 0 0
+}
+.card-buy{
+    width: 60%;
+    background: linear-gradient(-90deg, #F83596 0%, #7e328a 100%);
+    height: 48px;
+    border-radius: 32px;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    transform: translateY(25px);
+}
+.card-buy:hover{
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid #F83596;
+    color: #F83596;
+    font-weight: 800;
+}
+.article-5-division{
+    margin-top: 96px;
+}
+.article-5-container, .article-5-item{
+    display: flex
+}
+.article-5-item{
+    margin: 48px 0 0 0;
+}
+.article-5-text-container, .article-5-image-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article-5-text-container{
+    margin-top: 64px;
+}
+.article-5-image-container img{
+    width: 320px;
+}
+.article-5-item h3{
+    margin: 0 0 16px 0;
+}
+.article-5-item-txt{
+    margin: 0 0 0 24px;
+}
+.article-5-item-txt p{
+    color: #3d3d3d;
+}
+.article-6-division{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+}
+.article-6-division h3{
+    color: #3d3d3d;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 16px 0 0 0;
+}
+.article-6-container{
+    display: flex;
+    margin: 48px 0 0 0;
+    gap: 4%;
+}
+.article-6-item{
+    width: 22%;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 12px;
+}
+.article-6-item span{
+    position: absolute;
+}
+.article-6-item img{
+    width: 100%;
+}
+.article-7-division{
+    margin: 96px 0 0 0;
+}
+.article-7-division h2{
+    text-align: center;
+    margin: 0 0 56px 0;
+}
+.article-7-division p {
+    line-height: 28px;
+}
+.article-7-division img{
+    width: 100%;
+}
+.article-7-division span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
