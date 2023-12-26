@@ -401,3 +401,39 @@ section{
 .article-9-division p{
     margin: 24px 0 0 0;
 }
+.article-10-division{
+    margin: 56px 0 0 0
+}
+.article-10-division h2{
+    margin: 0 0 24px 0
+}
+.article-10-container{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+.article-10-txt-container{
+    width: 50%;
+}
+.article-10-txt-container p{
+    color: #464545;
+    font-weight: 300;
+    line-height: 28px;
+}
+.article-10-img-container{
+    width: 47%;
+    position: relative;
+}
+.article-10-img-container img{
+    width: 100%;
+}
+.all-plans-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 56px 0 0 0;
+}
+.card-buy.all-plans-btn{
+    width: 30%;
+    transform: translate(0px);
+}
