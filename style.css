@@ -437,3 +437,56 @@ section{
     width: 30%;
     transform: translate(0px);
 }
+.faq-item{
+    width: 100%;
+    margin: 16px 0 0 0;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-height: 48px;
+    transition: max-height 0.8s linear;
+}
+.faq-item.toggled{
+    max-height: 999px;
+    overflow: visible;
+}
+.faq-item span{
+    display: block;
+    padding: 0 16px;
+    width: 100.5%;
+    margin: -0.50% -0.25% 00 -0.25%;
+    border-radius: 8px;
+    height: 48px;
+    box-sizing: border-box;
+    line-height: 48px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: left;
+    color: #3d3d3d;
+    position: relative;
+}
+.faq-item span i{
+    position: absolute;
+    right: 16px;
+}
+.faq-item.toggled span .bi-eye-fill{
+    display: inline;
+}
+.faq-item.toggled span .bi-eye-slash-fill{
+    display: none;
+}
+.faq-item span .bi-eye-fill{
+    display: none;
+}
+.faq-item.toggled span{
+    background: linear-gradient(-90deg, #F83596 30%, #7e328a 100%);
+    color: #fff;
+}
+.faq-item p{
+    display: block;
+    margin-top: 16px;
+    padding: 8px;
+}
